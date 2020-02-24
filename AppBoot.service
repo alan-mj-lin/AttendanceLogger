@@ -1,0 +1,10 @@
+[Unit]
+Description=AttendanceLogger Boot
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/debian/AttendanceLogger/AttendanceLoggerLKM.py 
+WorkingDirectory=/home/debian/AttendanceLogger
+
+[Install]
+WantedBy=multi-user.target
